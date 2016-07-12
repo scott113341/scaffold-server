@@ -1,0 +1,20 @@
+{
+  "name": "{% name %}",
+  "version": "0.0.0",
+  "description": "{% description %}",
+  "author": "{% author %}",
+  "license": "MIT",
+  "repository": "git@github.com:{% owner %}/{% name %}.git",
+  "homepage": "https://github.com/{% owner %}/{% name %}",
+  "bugs": "https://github.com/{% owner %}/{% name %}/issues",
+  "main": "index.js",{% public? %}{% else %}
+  "private": true,{% end %}
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {}
+}
