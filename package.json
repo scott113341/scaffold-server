@@ -9,13 +9,28 @@
   "bugs": "https://github.com/{% owner %}/{% name %}/issues",
   "main": "index.js",{% public? %}{% else %}
   "private": true,{% end %}
+  "engines": {
+    "node": "6.6.0",
+    "npm": "3.10.8"
+  },
   "scripts": {
+    "develop": "nodemon index.js",
+    "lint": "semistandard --fix",
     "start": "node index.js"
   },
   "dependencies": {
+    "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "cors": "^2.8.1",
     "dotenv": "^2.0.0",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "keyrune-data": "^0.1.0",
+    "mtgjson": "^2.14.0",
+    "superagent": "^2.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^1.10.2",
+    "semistandard": "^9.0.0"
+  }
 }
