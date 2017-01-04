@@ -19,6 +19,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "basic-auth": "1.1.0",
     "body-parser": "1.15.2",
     "cors": "2.8.1",
     "dotenv": "2.0.0",
